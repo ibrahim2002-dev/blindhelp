@@ -2,10 +2,13 @@
   "name": "blindhelp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ibrahim2002-dev.github.io/blindhelp/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "vite": "5.1.1",
     "@vitejs/plugin-react": "5.0.0",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "gh-pages": "^5.0.0"
   }
 }
